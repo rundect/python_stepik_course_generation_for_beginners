@@ -1,6 +1,10 @@
 
 def magic_square(n):
     matrix = [[int(i) for i in input().split()] for i in range(n)]
+    square = n * n
+    for i in range(1, square + 1):
+        if i not in matrix:
+            return 'NO'
     sum = 0
     for i in range(n):
         sum += matrix[0][i]
