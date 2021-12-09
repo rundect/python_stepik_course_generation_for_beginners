@@ -1,0 +1,1 @@
+is_non_negative_num = lambda q: q.replace('.', '', 1).isdigit()
